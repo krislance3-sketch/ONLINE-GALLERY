@@ -20,7 +20,7 @@ const exhibits = [
         category: "CLIMATE & ENVIRONMENT",
         filter: "environment",
         title: "Climate Technology",
-        image: "images/climate-change.png",
+        image: "climate-change.png",
         lead: "In the Philippines, climate technology is especially relevant to flooding, extreme rainfall, heat, drought, typhoons, landslides, and disaster preparedness.",
         problem: "Climate-related hazards can damage homes, roads, farms, water systems, electricity, and local economies. Communities need better information and tools before, during, and after extreme weather.",
         evidence: "PAGASA reported in 2024 that the country's average annual temperature had risen by about 0.6°C during 1991–2020 and projected continued warming and changing rainfall patterns. PAGASA's 2025 monsoon assessment also documented flooding and rain-induced landslides during periods of enhanced southwest monsoon rainfall.",
