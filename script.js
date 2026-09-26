@@ -15,13 +15,14 @@ const exhibits = [
             ["DOST — 2025 AI Fest and National AI Strategy", "2025", "https://www.dost.gov.ph/knowledge-resources/news/86-2025-news/4124-2025-ai-fest-highlights-future-growth-prospects-for-ph.html"]
         ]
     },
-    {
-        id: "climate",
-        category: "CLIMATE & ENVIRONMENT",
-        filter: "environment",
-        title: "Climate Technology",
-        image: "images/climate-change.png",
-        lead: "In the Philippines, climate technology is especially relevant to flooding, extreme rainfall, heat, drought, typhoons, landslides, and disaster preparedness.",
+  {
+    id: "climate",
+    category: "CLIMATE & ENVIRONMENT",
+    filter: "environment",
+    title: "Climate Technology",
+    image: "climate-change.png",
+    lead: "In the Philippines, climate technology is especially relevant to flooding, extreme rainfall, heat, drought, typhoons, landslides, and disaster preparedness.",
+    problem: "Climate-related hazards can damage homes, roads, farms, water systems, electricity, and local economies. Communities need better information and tools before, during, and after extreme weather.",
         problem: "Climate-related hazards can damage homes, roads, farms, water systems, electricity, and local economies. Communities need better information and tools before, during, and after extreme weather.",
         evidence: "PAGASA reported in 2024 that the country's average annual temperature had risen by about 0.6°C during 1991–2020 and projected continued warming and changing rainfall patterns. PAGASA's 2025 monsoon assessment also documented flooding and rain-induced landslides during periods of enhanced southwest monsoon rainfall.",
         response: "Useful technologies include localized climate data, rainfall and flood monitoring, early-warning systems, satellite observation, climate-smart agriculture, water-management tools, and resilient infrastructure. PAGASA's localized climate information can help communities plan for specific risks.",
