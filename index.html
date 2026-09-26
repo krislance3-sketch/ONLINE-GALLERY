@@ -1,288 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S&T Issues and Trends — Philippines Online Gallery</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
-</head>
+<div class="welcome-modal" id="welcomeModal" aria-hidden="true">
 
-<body>
+    <div class="welcome-content">
 
-<header class="navbar">
-    <a class="logo" href="#home">
-        <span class="logo-mark">S&T</span>
-        <span class="logo-text">PHILIPPINES<br><small>ONLINE GALLERY</small></span>
-    </a>
+        <button
+            class="welcome-close"
+            id="welcomeClose"
+            aria-label="Close">
+            ×
+        </button>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#about">About</a>
-        <a href="#reflection">Reflection</a>
-        <a href="#references">References</a>
-    </nav>
+        <p class="eyebrow">
+            S&T ISSUES AND TRENDS ONLINE GALLERY
+        </p>
 
-    <button class="menu-button" id="menuButton" aria-label="Open menu">☰</button>
-</header>
+        <h2>
+            Welcome to the
+            <em>Exhibit</em>
+        </h2>
 
-<div class="mobile-menu" id="mobileMenu">
-    <a href="#home">Home</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#about">About</a>
-    <a href="#reflection">Reflection</a>
-    <a href="#references">References</a>
-</div>
+        <p class="welcome-text">
+            Explore a Philippine perspective on science and technology,
+            including current issues, evidence, challenges, and possible
+            technology responses.
+        </p>
 
-<main id="home">
+        <button
+            class="go-to-exhibit"
+            id="goToExhibit">
+            Go to the Exhibit <span>→</span>
+        </button>
 
-    <section class="hero">
-        <div class="hero-content">
-            <p class="eyebrow">S&T ISSUES AND TRENDS ONLINE GALLERY</p>
-            <h1>Technology and the <em>Future</em> of the Philippines</h1>
-            <p class="hero-description">
-                An evidence based digital exhibition about eight major science and
-                technology issues affecting Filipino communities, industries,
-                education, health, environment, security, and everyday life.
-            </p>
-            <div class="hero-buttons">
-                <a href="#gallery" class="button primary">Explore Gallery <span>→</span></a>
-                <a href="#about" class="button secondary">About the Exhibit</a>
-            </div>
-            <p class="source-note">
-                Research focus: Philippine evidence published or released from 2024–2026.
-            </p>
-        </div>
-
-        <div class="hero-visual">
-            <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=85" alt="Technology">
-            </div>
-            <div class="hero-label">
-                <span>PHILIPPINE S&T</span>
-                <p>Eight issues.<br>One changing country.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="intro-section">
-        <div class="section-number"></div>
-        <div class="intro-content">
-            <p class="eyebrow">THE EXHIBITION</p>
-            <h2>Science and technology <em>in a changing Philippines.</em></h2>
-            <p>
-                The Philippines is dealing with rapid digitalization, climate risks,
-                pressure on food and energy systems, cybersecurity concerns, electronic
-                waste, and unequal access to technology. Recent government and development
-                reports show that these are not abstract issues: they affect households,
-                farms, schools, businesses, local governments, and disaster response.
-            </p>
-            <p>
-                This gallery focuses on the Philippine context and uses sources dated
-                from 2024 through 2026. Open each exhibit to see the problem, current
-                Philippine evidence, possible technology responses, and source links.
-            </p>
-        </div>
-    </section>
-
-    <section class="gallery-section" id="gallery">
-        <div class="gallery-header">
-            <div>
-                <p class="eyebrow">EXPLORE THE EXHIBITION</p>
-                <h2>Eight perspectives on the <em>Philippines</em></h2>
-            </div>
-            <div class="search-box">
-                <input id="searchInput" type="text" placeholder="Search a topic or problem..." aria-label="Search gallery">
-                <span>⌕</span>
-            </div>
-        </div>
-
-        <div class="filter-container">
-            <button class="filter active" data-filter="all">All</button>
-            <button class="filter" data-filter="digital">Digital</button>
-            <button class="filter" data-filter="environment">Environment</button>
-            <button class="filter" data-filter="health">Health</button>
-            <button class="filter" data-filter="space">Space</button>
-            <button class="filter" data-filter="society">Society</button>
-        </div>
-
-        <div class="gallery-grid" id="galleryGrid"></div>
-        <p class="no-results" id="noResults">No exhibit matches your search.</p>
-    </section>
-
-    <section class="statement-section">
-        <div class="statement-image">
-            <img src="images/luneta-park.png" alt="Rizal Monument at Rizal Park (Luneta), Manila">
-        </div>
-        <div class="statement-content">
-            <p class="eyebrow">THE PHILIPPINE QUESTION</p>
-            <h2>How can technology respond to problems people actually face?</h2>
-            <p>
-                A technology becomes more meaningful when it responds to a real need:
-                safer communities during extreme weather, better access to information,
-                stronger food systems, cleaner energy, safer digital services, or more
-                responsible management of discarded devices.
-            </p>
-            <p>
-                The gallery therefore looks at both opportunities and limitations.
-                Technology alone does not solve every problem; infrastructure, skills,
-                financing, governance, research, and community participation also matter.
-            </p>
-        </div>
-    </section>
-
-    <section class="about-section" id="about">
-        <div class="about-number"></div>
-        <div class="about-content">
-            <p class="eyebrow">ABOUT THIS GALLERY</p>
-            <h2>Eight issues. <em>One Philippine perspective.</em></h2>
-            <p>
-                This online gallery was created for the S&T Issues and Trends activity.
-                It presents Artificial Intelligence, Climate Technology, Biotechnology,
-                Renewable Energy, Cybersecurity, Space Science, E-Waste, and Digital
-                Inequality through recent Philippine evidence.
-            </p>
-            <div class="rubric-grid">
-                <div><strong>COURSE</strong><span>Bachelor of Science in Computer Science</span></div>
-                <div><strong>RESEARCH</strong><span>2024–2026 sources linked to each exhibit</span></div>
-                <div><strong>NAME</strong><span>Krislance Abutin Endoma</span></div>
-                <div><strong>TIME SCHEDULE</strong><span>Saturday 2:30 PM to 5:30 PM</span></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="questions-section">
-        <div class="questions-heading">
-            <p class="eyebrow">CRITICAL THINKING</p>
-            <h2>Questions for the <em>future</em></h2>
-        </div>
-        <div class="questions-list">
-            <div class="question"><span>01</span><p>Which Philippine problems can science and technology address most directly?</p></div>
-            <div class="question"><span>02</span><p>Who benefits from a new technology, and who may still be left behind?</p></div>
-            <div class="question"><span>03</span><p>What infrastructure, skills, funding, or policies are needed before a solution can work?</p></div>
-            <div class="question"><span>04</span><p>How can innovation be developed while protecting people, communities, and the environment?</p></div>
-        </div>
-    </section>
-
-    <section class="reflection-section" id="reflection">
-        <div class="reflection-number"></div>
-        <div class="reflection-content">
-            <p class="eyebrow">STUDENT REFLECTION</p>
-            <h2>Technology is connected to <em>real life.</em></h2>
-            <div class="reflection-box">
-                <p>
-                    After exploring the eight topics, I realized that science and technology
-                    are closely connected to problems that Filipinos experience every day.
-                    Climate hazards can affect homes, farms, roads, water, and electricity.
-                    Digital technology can create opportunities for learning and work, but
-                    access and digital skills are still unequal.
-                </p>
-                <p>
-                    I also learned that technology needs to be used responsibly. Artificial
-                    intelligence, biotechnology, satellites, renewable energy, and digital
-                    services can support development, but they also require research,
-                    regulation, infrastructure, funding, and people who know how to use
-                    them properly. The Philippine context matters because a solution must
-                    respond to local needs and conditions.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="references-section" id="references">
-        <div class="references-heading">
-            <p class="eyebrow">SOURCES & REFERENCES</p>
-            <h2>Research from <em>2024–2026</em></h2>
-            <p class="reference-intro">
-                The exhibit uses recent sources from Philippine government agencies and
-                major development institutions. Each exhibit also has its own source list.
-            </p>
-        </div>
-        <div class="references-list" id="referencesList"></div>
-    </section>
-
-    <footer>
-        <div class="footer-main">
-            <div class="footer-logo">
-                <span class="logo-mark">S&T</span>
-                <div>PHILIPPINES<br><small>ONLINE GALLERY</small></div>
-            </div>
-            <p>Science • Technology • Philippines • Future</p>
-        </div>
-        <div class="footer-bottom">
-            <span>S&T Issues and Trends Online Gallery</span>
-            <span>Research window: 2024–2026</span>
-        </div>
-    </footer>
-</main>
-
-<div class="modal" id="exhibitModal" aria-hidden="true">
-    <div class="modal-content">
-        <button class="modal-close" id="modalClose" aria-label="Close exhibit">×</button>
-        <div class="modal-image">
-            <img id="modalImage" src="" alt="">
-        </div>
-        <div class="modal-info">
-            <span class="modal-category" id="modalCategory"></span>
-            <h2 id="modalTitle"></h2>
-            <p class="modal-lead" id="modalLead"></p>
-
-            <div class="modal-block">
-                <h4>PHILIPPINE PROBLEM</h4>
-                <p id="modalProblem"></p>
-            </div>
-
-            <div class="modal-block">
-                <h4>RECENT PHILIPPINE EVIDENCE</h4>
-                <p id="modalEvidence"></p>
-            </div>
-
-            <div class="modal-block">
-                <h4>TECHNOLOGY RESPONSE</h4>
-                <p id="modalResponse"></p>
-            </div>
-
-            <div class="modal-block">
-                <h4>CHALLENGES / RISKS</h4>
-                <p id="modalRisks"></p>
-            </div>
-
-            <div class="modal-sources">
-                <h4>SOURCES — 2024–2026</h4>
-                <div id="modalSources"></div>
-            </div>
-        </div>
     </div>
+
 </div>
-
-<script src="script.js"></script>
-
-<!-- BACK TO TOP BUTTON -->
-<button id="backToTop" class="back-to-top" aria-label="Back to top">
-    ↑
-</button>
-
-<script>
-    const backToTop = document.getElementById("backToTop");
-
-    window.addEventListener("scroll", () => {
-        if (window.scrollY > 500) {
-            backToTop.classList.add("show");
-        } else {
-            backToTop.classList.remove("show");
-        }
-    });
-
-    backToTop.addEventListener("click", () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
-</script>
-
-</body>
-</html>
